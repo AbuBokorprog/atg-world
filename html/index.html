@@ -53,9 +53,7 @@
       </div>
       <hr style="margin-bottom: 28px" />
       <div id="post-search">
-        <div class="post">
-          <img class="post" src="/image/thumbnail1.png" alt="" />
-        </div>
+        <div class="post" id="allPost"></div>
         <div>
           <form>
             <input type="search" name="" id="" placeholder="Noida, India" />
@@ -73,6 +71,11 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="dropdown-container">
+        <button class="dropdown-button" onclick="editPost()">Edit</button>
+        <button class="dropdown-button" onclick="reportPost()">Report</button>
+        <button class="dropdown-button" onclick="customOption()">Option</button>
       </div>
     </section>
     <script src="/js/index.js"></script>

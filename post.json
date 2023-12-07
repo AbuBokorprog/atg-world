@@ -3,18 +3,20 @@
     "id": "1",
     "category": "✍️ Article",
     "title": "What if famous brands had regular fonts? Meet RegulaBrands!",
+    "thumbnail": "/image/thumbnail1.png",
     "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-    "author-img": "/image/author1.png",
-    "author-name": "Sarthak Kamra",
+    "author_img": "/image/author1.png",
+    "author_name": "Sarthak Kamra",
     "views": "1.4k views"
   },
   {
     "id": "2",
     "category": "🔬️ Education",
     "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+    "thumbnail": "/image/thumbnail2.png",
     "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-    "author-img": "/image/author2.png",
-    "author-name": "Sarah West",
+    "author_img": "/image/author2.png",
+    "author_name": "Sarah West",
     "views": "1.4k views"
   },
   {
@@ -22,22 +24,23 @@
     "category": "🗓️ Meetup",
     "title": "Finance & Investment Elite Social Mixer @Lujiazui",
     "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
-    "author-img": "/image/author3.png",
+    "thumbnail": "/image/thumbnail3.png",
+    "author_img": "/image/author3.png",
     "date": "Fri, 12 Oct, 2018",
     "location": "Ahmedabad, India",
     "link": "Visit Website",
-    "author-name": "Ronal Jones",
+    "author_name": "Ronal Jones",
     "views": "1.4k views"
   },
   {
     "id": "4",
     "category": "💼️ Job",
     "title": "Software Developer",
-    "author-img": "/image/author4.png",
+    "author_img": "/image/author4.png",
     "company": "Innovaccer Analytics Private Ltd.",
     "location": "Noida, India",
     "link": "Apply on Timesjobs",
-    "author-name": "Joseph Gray",
+    "author_name": "Joseph Gray",
     "views": "1.4k views"
   }
 ]
