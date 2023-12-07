@@ -132,19 +132,26 @@ input {
   margin: 20px 0;
 }
 #title-three {
-  margin: 8px 0;
+  margin-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 .threeDotIcon {
   width: 26px;
-  padding: 16px;
   border: none;
   cursor: pointer;
 }
-.description {
-  margin: 8px 0;
+/* .description {
+  /* margin: 8px 0; */
+/* } */
+
+#location-other-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 .author-img {
@@ -199,7 +206,7 @@ input {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px;
+  padding: 5px 5px 5px 20px;
   text-decoration: none;
   display: block;
 }

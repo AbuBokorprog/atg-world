@@ -11,11 +11,9 @@ fetch(post)
   .then((data) => {
     console.log(data);
     data.forEach((post) => {
-      // Create a div element for each post (card)
       const postCard = document.createElement("div");
-      postCard.classList.add("post-card"); // You can add a specific class for styling
+      postCard.classList.add("post-card");
 
-      // Set the content of the card with post data
       postCard.innerHTML = `
         <div class="allPost">
         <img src="${post?.thumbnail ? post?.thumbnail : ""}" class="thumbnail">
@@ -32,6 +30,15 @@ fetch(post)
         </div>
         </div>
         <p class="description">${post?.description ? post?.description : ""}</p>
+        </div>
+
+        <div id="location-other-info">
+              <p>${post?.company ? post?.company : ""}</p>
+              <p>${post?.date ? post?.date : ""}</p>
+              <p>${post?.location ? post?.location : ""}</p>
+            </div>
+
+
         <div class="author-additional">
         <div class="author-info">
           <img src="${post?.author_img}" alt="Author Image" class="author-img">
@@ -39,43 +46,15 @@ fetch(post)
         </div>
         <div class="additional-info">
         <div class="views">${post.views}</div>
-        <button class="share-button"><img src="https://cdn-icons-png.flaticon.com/128/929/929539.png" class="share"></button>
+        <button class="share-button">
+        <img src="https://cdn-icons-png.flaticon.com/128/929/929539.png" class="share">
+        </button>
         </div>
         </div>
         </div>
       `;
 
-      // Append the post card to the "allPost" element
       allPostElement.appendChild(postCard);
-
-      // Event listener for the threeDotIcon
-      //   const threeDotIcon = postCard.querySelector(".threeDotIcon");
-      //   const dropdownContainer = postCard.querySelector(".dropdown-container");
-
-      //   threeDotIcon.addEventListener("click", () => {
-      //     dropdownContainer.classList.toggle("show-dropdown");
-      //   });
-
-      //   // Function to handle the "Edit" option
-      //   function editPost() {
-      //     // Replace with your logic for editing the post
-      //     alert("Edit post");
-      //     dropdownContainer.classList.remove("show-dropdown");
-      //   }
-
-      //   // Function to handle the "Report" option
-      //   function reportPost() {
-      //     // Replace with your logic for reporting the post
-      //     alert("Report post");
-      //     dropdownContainer.classList.remove("show-dropdown");
-      //   }
-
-      //   // Function for custom option
-      //   function customOption() {
-      //     // Replace with your logic for the custom option
-      //     alert("Custom option");
-      //     dropdownContainer.classList.remove("show-dropdown");
-      //   }
     });
   })
   .catch((error) => {
