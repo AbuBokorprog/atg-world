@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1",
+    "category": "✍️ Article",
+    "title": "What if famous brands had regular fonts? Meet RegulaBrands!",
+    "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+    "author-img": "/image/author1.png",
+    "author-name": "Sarthak Kamra",
+    "views": "1.4k views"
+  },
+  {
+    "id": "2",
+    "category": "🔬️ Education",
+    "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+    "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+    "author-img": "/image/author2.png",
+    "author-name": "Sarah West",
+    "views": "1.4k views"
+  },
+  {
+    "id": "3",
+    "category": "🗓️ Meetup",
+    "title": "Finance & Investment Elite Social Mixer @Lujiazui",
+    "description": "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+    "author-img": "/image/author3.png",
+    "date": "Fri, 12 Oct, 2018",
+    "location": "Ahmedabad, India",
+    "link": "Visit Website",
+    "author-name": "Ronal Jones",
+    "views": "1.4k views"
+  },
+  {
+    "id": "4",
+    "category": "💼️ Job",
+    "title": "Software Developer",
+    "author-img": "/image/author4.png",
+    "company": "Innovaccer Analytics Private Ltd.",
+    "location": "Noida, India",
+    "link": "Apply on Timesjobs",
+    "author-name": "Joseph Gray",
+    "views": "1.4k views"
+  }
+]
