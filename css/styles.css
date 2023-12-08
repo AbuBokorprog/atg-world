@@ -22,11 +22,11 @@
   border-radius: 50px;
 }
 
-#create-account {
+/* #create-account {
   display: flex;
   align-items: center;
   gap: 6px;
-}
+} */
 
 #vactor {
   width: 12px;
@@ -37,45 +37,51 @@
   margin-bottom: 40px;
 }
 
+.banner-container {
+  position: relative;
+  display: inline-block;
+}
+
 .banner-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/image/Rectangle-2.png");
-  background-size: cover;
   width: 100%;
-  height: 75%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .banner-text {
   color: white;
-  padding-top: 340px;
-  padding-bottom: 60px;
-  padding-left: 300px;
+  top: 250px;
+  padding-left: 200px;
 }
 #banner-title {
   font-size: 28px;
 }
 
-#section3 {
-  margin: 0 200px;
-  padding: 0 0 100px 0;
-}
-
-#section3-nav {
+/* #section3-nav {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
-}
+} */
 
 .tab {
   color: #8a8a8a;
 }
 
-#section3-post {
+/* #section3-post {
   display: flex;
   align-items: center;
   gap: 12px;
-}
+} */
 
 #btn {
   display: flex;
@@ -97,8 +103,9 @@
 .join-group {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 0px 20px;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -107,18 +114,18 @@
   background-color: #2f6ce5;
 }
 .thumbnail {
-  width: 500px;
+  width: 100%;
 }
 input {
   border: none;
   padding: 10px 40px;
   width: 270px;
 }
-#post-search {
+/* #post-search {
   display: flex;
   justify-content: space-between;
   gap: 90px;
-}
+} */
 
 #notice {
   display: flex;
@@ -130,6 +137,7 @@ input {
 
 .allPost {
   margin: 20px 0;
+  width: 100%;
 }
 #title-three {
   margin-top: 8px;
@@ -223,4 +231,51 @@ input {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .threeDotIcon {
   background-color: #f1f1f1;
+}
+
+.like {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-header {
+  color: #008a45;
+  background-color: #effff4;
+}
+
+.facebook {
+  width: 25px;
+  height: 25px;
+}
+.create-new {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    padding-left: 20px;
+    text-align: center;
+    top: 50px;
+  }
+  #banner-title {
+    font-size: normal;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+}
+
+/* Custom CSS for desktop responsiveness */
+@media only screen and (min-width: 768px) {
+  .show-on-desktop {
+    display: none;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
 }

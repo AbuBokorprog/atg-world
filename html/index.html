@@ -4,37 +4,179 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>ATGWORLD</title>
   </head>
   <body>
-    <header id="header">
-      <nav id="nav">
+    <nav class="navbar navbar-expand-lg mx-lg-5">
+      <div class="container-fluid">
         <img src="/image/whole.png" alt="" />
-        <form>
-          <input
-            type="search"
-            name=""
-            id="search-bar"
-            placeholder="Search for your favorite groups in ATG"
-          />
-        </form>
-        <div id="create-account">
-          <p>Create account. <span style="color: #2f6ce5">It's free </span></p>
-          <img src="/image/Vector.png" alt="vector" id="vactor" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex-lg justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <form class="mx-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="search-bar"
+              placeholder="Search for your favorite groups in ATG"
+              aria-label="Search"
+            />
+          </form>
+          <div class="d-flex align-items-center gap-1">
+            <p class="mb-0">
+              Create account.
+            </p>
+            <div>
+              <button type="button" class="btn text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                It's free
+              </button>
+              <img src="/image/Vector.png" alt="vector" id="vactor" />
+            </div>
+          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+    <!-- sign in -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-xxl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="" id="exampleModalLabel"><small>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</small></p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-lg-flex gap-5 justify-content-between align-content-center">
+            <div class="w-100">
+              <h3 class="hide-on-mobile">Sign In</h3>
+              <h3 class="show-on-desktop">Welcome Back</h3>
+              <form>
+                <input type="email" class="form-control bg-body-tertiary" id="exampleFormControlInput1" placeholder="Email">
+                <input type="password" class="form-control bg-body-tertiary" id="exampleFormControlInput2" placeholder="Password">
+                <div class="d-flex justify-content-between align-content-center gap-2">
+                  <input type="submit" value="sign in" class="form-control bg-primary my-3 text-white rounded-5">
+                  <p class="show-on-desktop" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal2"><small>Or, create account</small></p>
+                </div>
+              </form>
+              <div>
+                <!-- Facebook Sign In -->
+                <div class="d-flex align-content-center gap-2 justify-content-center border border-1 border-body-tertiary pt-3">
+                  <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" class="facebook" alt="facebook">
+                  </div>
+                  <div>
+                    <p>Sign in with Facebook</p>
+                  </div>
+                </div>
+                <!-- Google Sign In -->
+                <div class="d-flex align-content-center gap-2 justify-content-center border border-1 border-body-tertiary pt-3">
+                  <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" class="facebook" alt="facebook">
+                  </div>
+                  <div>
+                    <p>Sign in with Google</p>
+                  </div>
+                </div>
+                <p class="text-center mt-2">Forgot Password?</p>
+              </div>
+            </div>
+            <div class="w-100 hide-on-mobile">
+              <p class=" "><small>Don’t have an account yet? <span class="text-primary create-new" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal2">Create new for free!</span></small></p>
+              <img src="/image/atg_illustration.png" alt="" class="w-75 ">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- create  -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-xxl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="" id="exampleModalLabel"><small>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</small></p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-lg-flex gap-5 justify-content-between align-content-center">
+            <div class="w-100">
+              <h3>Create Account</h3>
+              <form>
+                <div class="d-flex align-content-center">
+                  <input type=text" class="form-control bg-body-tertiary"  placeholder="First Name">
+                  <input type="text" class="form-control bg-body-tertiary"  placeholder="Last Name">
+                </div>
+                <input type="email" class="form-control bg-body-tertiary" id="exampleFormControlInput3" placeholder="Email">
+                <input type="password" class="form-control bg-body-tertiary" id="exampleFormControlInput4" placeholder="Password">
+                <input type="password" class="form-control bg-body-tertiary" id="exampleFormControlInput5" placeholder="Confirm Password">
+                <div class="d-flex justify-content-between align-content-center gap-2">
+                  <input type="submit" value="sign in" class="form-control bg-primary my-3 text-white rounded-5">
+                  <p class="show-on-desktop" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal"><small>Or, sign in</small></p>
+                </div>
+              </form>
+              <div>
+                <!-- Facebook Sign In -->
+                <div class="d-flex align-content-center gap-2 justify-content-center border border-1 border-body-tertiary pt-3">
+                  <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" class="facebook" alt="facebook">
+                  </div>
+                  <div>
+                    <p>Sign in with Facebook</p>
+                  </div>
+                </div>
+                <!-- Google Sign In -->
+                <div class="d-flex align-content-center gap-2 justify-content-center border border-1 border-body-tertiary pt-3">
+                  <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" class="facebook" alt="facebook">
+                  </div>
+                  <div>
+                    <p>Sign in with Google</p>
+                  </div>
+                </div>
+                <p class="text-center mt-2">Forgot Password?</p>
+                <p class="show-on-desktop text-center">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+              </div>
+            </div>
+            <div class="w-100 hide-on-mobile">
+              <p class="hide-on-mobile "><small>Already have an account?<span class="text-primary create-new" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</span></small></p>
+              <img src="/image/atg_illustration.png" alt="" class="w-50 hide-on-mobile">
+              <p class="hide-on-mobile text-center">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <section id="banner">
-      <div class="banner-img">
-        <div class="banner-text">
+      <div class="banner-container">
+        <img src="/image/Rectangle-2.png" alt="" class="banner-img img-fluid" />
+        <div class="overlay"></div>
+        <div class="banner-text  position-absolute">
           <h1 id="banner-title">Computer Engineering</h1>
           <p><small>142,765 Computer Engineers follow this</small></p>
         </div>
       </div>
+      </div>
     </section>
-    <section id="section3">
-      <div id="section3-nav">
-        <div id="section3-post">
+    <section id="section3" class="mx-1 mx-lg-5 px-lg-5">
+      <div id="section3-nav" class="d-lg-flex align-content-center gap-5 justify-content-between">
+        <div id="section3-post" class="d-flex align-items-center gap-2 gap-lg-5 justify-content-between">
           <p>All Posts(32)</p>
           <p class="tab">Article</p>
           <p class="tab">Event</p>
@@ -52,7 +194,7 @@
         </div>
       </div>
       <hr style="margin-bottom: 28px" />
-      <div id="post-search">
+      <div id="post-search" class="d-lg-flex justify-content-between gap-5 align-content-center">
         <div class="post" id="allPost"></div>
         <div>
           <form>
@@ -70,9 +212,19 @@
               experience.
             </p>
           </div>
+          <div class="d-flex align-content-center gap-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/126/126473.png" alt="" class="like">
+            <p class="">Recommended Groups</p>
+          </div>
         </div>
       </div>
     </section>
+
     <script src="/js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

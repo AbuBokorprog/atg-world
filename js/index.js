@@ -15,11 +15,12 @@ fetch(post)
       postCard.classList.add("post-card");
 
       postCard.innerHTML = `
+        <div class="my-4">
         <div class="allPost">
         <img src="${post?.thumbnail ? post?.thumbnail : ""}" class="thumbnail">
-        <div class="category">${post.category}</div>
-        <div id="title-three">
-        <h3>${post.title}</h3>
+        <div class="category px-2">${post.category}</div>
+        <div class="px-2" id="title-three">
+        <h3 >${post.title}</h3>
         <div class="dropdown">
         <img src="https://cdn-icons-png.flaticon.com/128/2311/2311523.png" class="threeDotIcon" >
         <div class="dropdown-content">
@@ -29,17 +30,19 @@ fetch(post)
   </div>
         </div>
         </div>
-        <p class="description">${post?.description ? post?.description : ""}</p>
+        <p class="description px-2">${
+          post?.description ? post?.description : ""
+        }</p>
         </div>
 
-        <div id="location-other-info">
-              <p>${post?.company ? post?.company : ""}</p>
-              <p>${post?.date ? post?.date : ""}</p>
-              <p>${post?.location ? post?.location : ""}</p>
+        <div class="px-2 grid row">
+              <p class="col">${post?.company ? post?.company : ""}</p>
+              <p class="col">${post?.date ? post?.date : ""}</p>
+              <p class="col">${post?.location ? post?.location : ""}</p>
             </div>
 
 
-        <div class="author-additional">
+        <div class="author-additional px-2">
         <div class="author-info">
           <img src="${post?.author_img}" alt="Author Image" class="author-img">
           <div class="author-title">${post?.author_name}</div>
@@ -49,6 +52,7 @@ fetch(post)
         <button class="share-button">
         <img src="https://cdn-icons-png.flaticon.com/128/929/929539.png" class="share">
         </button>
+        </div>
         </div>
         </div>
         </div>
