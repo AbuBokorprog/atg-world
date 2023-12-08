@@ -9,7 +9,6 @@ fetch(post)
     return response.json();
   })
   .then((data) => {
-    console.log(data);
     data.forEach((post) => {
       const postCard = document.createElement("div");
       postCard.classList.add("post-card");
