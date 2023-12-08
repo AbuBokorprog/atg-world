@@ -66,11 +66,8 @@
   font-size: 28px;
 }
 
-/* #section3-nav {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  justify-content: space-between;
+/* #section3 {
+  margin: 0 20px;
 } */
 
 .tab {
@@ -83,11 +80,11 @@
   gap: 12px;
 } */
 
-#btn {
+/* #btn {
   display: flex;
   align-items: center;
   gap: 10px;
-}
+} */
 
 .write-btn {
   padding: 10px 20px;
@@ -98,6 +95,11 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+}
+
+.mobile-joinGoup {
+  top: 55px;
+  left: 65px;
 }
 
 .join-group {
@@ -136,8 +138,8 @@ input {
 }
 
 .allPost {
-  margin: 20px 0;
-  width: 100%;
+  margin: 10px 30px 20px 0;
+  width: 70%;
 }
 #title-three {
   margin-top: 8px;
@@ -252,6 +254,10 @@ input {
 }
 
 @media only screen and (max-width: 767px) {
+  .allPost {
+    margin: 20px 0px;
+    width: 100%;
+  }
   .banner-text {
     padding-left: 20px;
     text-align: center;

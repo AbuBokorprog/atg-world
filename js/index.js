@@ -14,8 +14,8 @@ fetch(post)
       postCard.classList.add("post-card");
 
       postCard.innerHTML = `
-        <div class="my-4">
-        <div class="allPost">
+        <div class="my-4 width-75">
+        <div class="">
         <img src="${post?.thumbnail ? post?.thumbnail : ""}" class="thumbnail">
         <div class="category px-2">${post.category}</div>
         <div class="px-2" id="title-three">
