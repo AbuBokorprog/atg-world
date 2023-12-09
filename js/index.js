@@ -84,20 +84,34 @@ signInForm.addEventListener("submit", function (event) {
     const div = document.createElement("div");
     div.innerHTML = `
     <div class="d-flex justify-content-between align-content-center mt-4">
-    <img src="/image/author2.png" alt="" />
-    <p>Hello world</p>
+    <div class="d-flex gap-3 align-content-center">
+    <img src="/image/group1.png" alt="" />
+    <p>Travel Enthusiasts Haven</p>
+    </div>
     <button class="btn" id="follow-btn">Follow</button>
     </div>
     <div class="d-flex justify-content-between align-content-center mt-4">
-    <img src="/image/author2.png" alt="" />
-    <p>Hello world</p>
+    <div class="d-flex gap-3 align-content-center">
+    <img src="/image/group2.png" alt="" />
+    <p>Tech Couture & Sculptural Elegance</p>
+    </div>
     <button class="btn" id="follow-btn">Follow</button>
     </div>
     <div class="d-flex justify-content-between align-content-center mt-4">
-    <img src="/image/author2.png" alt="" />
-    <p>Hello world</p>
+    <div class="d-flex gap-3 align-content-center">
+    <img src="/image/group3.png" alt="" />
+    <p>Fashionable Finds & Tech Trends</p>
+    </div>
+    <button class="btn" id="follow-btn">Follow</button>
+    </div>
+    <div class="d-flex justify-content-between align-content-center mt-4">
+    <div class="d-flex gap-3 align-content-center">
+    <img src="/image/group4.png" alt="" />
+    <p>Art-Tech Couture Collective</p>
+    </div>
     <button class="btn" id="follow-btn">Follow</button>
     </div>`;
+
     groups.appendChild(div);
     const followButton = document.getElementById("follow-btn");
     followButton.addEventListener("click", function (event) {
@@ -107,7 +121,6 @@ signInForm.addEventListener("submit", function (event) {
         followButton.setAttribute("class", "btn btn-dark");
       } else {
         followButton.innerText = "Follow";
-        followButton.setAttribute("class", "btn");
       }
     });
   } else {
