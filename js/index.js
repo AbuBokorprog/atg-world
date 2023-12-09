@@ -63,3 +63,40 @@ fetch(post)
   .catch((error) => {
     console.error("Error:", error);
   });
+
+const joinGroupBtn = document.getElementById("join-group");
+const removeGroupBtn = document.getElementById("remove-group");
+const signInForm = document.getElementById("signIn-form");
+
+const user = {};
+
+signInForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const email = this.elements.email.value;
+  const password = this.elements.password.value;
+
+  if (email === "user@example.com" && password === "user45@") {
+    alert("Login successful");
+    user.email = email;
+    user.password = password;
+  } else {
+    alert("Login failed");
+    user.email = null;
+    user.password = null;
+  }
+
+  this.elements.email.value = "";
+  this.elements.password.value = "";
+});
+
+joinGroupBtn.addEventListener("click", function (event) {
+  if (user.email && user.password) {
+    joinGroupBtn.innerHTML = `
+     <img src="https://cdn-icons-png.flaticon.com/128/3388/3388530.png" alt="" class="remove-group" id="join-groupIcon" />
+     <p>Remove Group</p>
+     `;
+  } else {
+    alert("User not logged in");
+  }
+});

@@ -85,15 +85,17 @@
             <div class="w-100">
               <h3 class="hide-on-mobile">Sign In</h3>
               <h3 class="show-on-desktop">Welcome Back</h3>
-              <form>
+              <form id="signIn-form">
                 <input
                   type="email"
+                  name="email"
                   class="form-control bg-body-tertiary"
                   id="exampleFormControlInput1"
                   placeholder="Email"
                 />
                 <input
                   type="password"
+                  name="password"
                   class="form-control bg-body-tertiary"
                   id="exampleFormControlInput2"
                   placeholder="Password"
@@ -228,7 +230,7 @@
                 >
                   <input
                     type="submit"
-                    value="sign in"
+                    value="Create Account"
                     class="form-control bg-primary my-3 text-white rounded-5"
                   />
                   <p
@@ -327,7 +329,6 @@
         </div>
       </div>
     </section>
-
     <section id="section3" class="mx-1 mx-lg-5 px-lg-5">
       <div class="d-lg-flex align-content-center gap-5 justify-content-between">
         <div
@@ -344,9 +345,9 @@
           <button class="write-btn">
             Write a Post <img src="/image/Vector.png" alt="" />
           </button>
-          <button class="join-group">
-            <img src="/image/group.png" alt="" />
-            <p>Join Group</p>
+          <button class="join-group" id="join-group">
+            <img src="/image/group.png" alt="" id="join-groupIcon" />
+            <p id="join-groupText">Join Group</p>
           </button>
         </div>
       </div>
@@ -358,7 +359,13 @@
         <div class="post allPost" id="allPost"></div>
         <div>
           <form>
-            <input type="search" name="" id="" placeholder="Noida, India" />
+            <input
+              type="search"
+              name=""
+              id=""
+              class="container"
+              placeholder="Noida, India"
+            />
           </form>
           <hr style="margin-top: 10px" />
           <div id="notice">
@@ -379,6 +386,9 @@
               class="like"
             />
             <p class="">Recommended Groups</p>
+          </div>
+          <div>
+            <h1>Groups</h1>
           </div>
         </div>
       </div>
