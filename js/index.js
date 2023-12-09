@@ -67,6 +67,7 @@ fetch(post)
 const joinGroupBtn = document.getElementById("join-group");
 const removeGroupBtn = document.getElementById("remove-group");
 const signInForm = document.getElementById("signIn-form");
+const groups = document.getElementById("groups");
 
 const user = {};
 
@@ -80,6 +81,35 @@ signInForm.addEventListener("submit", function (event) {
     alert("Login successful");
     user.email = email;
     user.password = password;
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="d-flex justify-content-between align-content-center mt-4">
+    <img src="/image/author2.png" alt="" />
+    <p>Hello world</p>
+    <button class="btn" id="follow-btn">Follow</button>
+    </div>
+    <div class="d-flex justify-content-between align-content-center mt-4">
+    <img src="/image/author2.png" alt="" />
+    <p>Hello world</p>
+    <button class="btn" id="follow-btn">Follow</button>
+    </div>
+    <div class="d-flex justify-content-between align-content-center mt-4">
+    <img src="/image/author2.png" alt="" />
+    <p>Hello world</p>
+    <button class="btn" id="follow-btn">Follow</button>
+    </div>`;
+    groups.appendChild(div);
+    const followButton = document.getElementById("follow-btn");
+    followButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (followButton.innerText == "Follow") {
+        followButton.innerText = "Unfollow";
+        followButton.setAttribute("class", "btn btn-dark");
+      } else {
+        followButton.innerText = "Follow";
+        followButton.setAttribute("class", "btn");
+      }
+    });
   } else {
     alert("Login failed");
     user.email = null;
